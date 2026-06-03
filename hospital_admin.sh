@@ -22,3 +22,16 @@ initialize_system() {
 }
 
 initialize_system
+secure_data() {
+    if [ ! -d "active_logs" ]; then
+        echo "ERROR: active_logs not found. Run initialize_system first."
+        return 1
+    fi
+
+    chmod 700 active_logs
+    ls -l | grep active_logs
+    echo "Security hardening complete."
+}
+
+secure_data
+echo "System Environment Secured - $(date)"
