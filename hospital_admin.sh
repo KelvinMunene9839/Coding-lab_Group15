@@ -1,3 +1,4 @@
+# Author: Member 2 - Security Lead
 # KNH Security Script - Member 2
 #!/bin/bash
 
