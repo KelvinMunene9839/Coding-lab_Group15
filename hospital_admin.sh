@@ -22,6 +22,11 @@ initialize_system() {
 }
 
 initialize_system
+
+# ==================
+# Securing Data
+# ==================
+
 secure_data() {
     if [ ! -d "active_logs" ]; then
         echo "ERROR: active_logs not found. Run initialize_system first."
