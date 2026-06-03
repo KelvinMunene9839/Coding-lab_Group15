@@ -1,3 +1,4 @@
+# KNH Security Script - Member 2
 #!/bin/bash
 
 initialize_system() {
@@ -35,4 +36,3 @@ secure_data() {
 initialize_system
 secure_data
 echo "System Environment Secured - $(date)"
-
