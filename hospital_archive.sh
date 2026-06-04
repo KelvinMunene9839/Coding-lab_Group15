@@ -26,3 +26,15 @@ archive_logs() {
 }
 EOF
 
+# Recreate empty logs so the engine keeps recording, then run.
+
+recreate_logs() {
+    for name in heart_rate_log temperature_log water_usage_log; do
+        touch "$ACTIVE_DIR/${name}.log"
+    done
+    echo "Archiving complete on $(date)"
+}
+
+archive_logs
+recreate_logs
+EOF
