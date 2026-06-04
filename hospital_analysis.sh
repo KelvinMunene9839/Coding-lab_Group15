@@ -13,7 +13,10 @@ process_vitals() {
     # Add a header line to the report
     echo "Timestamp | Device_ID | Value" >> reports/critical_alerts.txt
     echo "--------------------------------------" >> reports/critical_alerts.txt
-
+    
+    echo "Report generated on: $(date)" >> reports/critical_alerts.txt
+    echo "--------------------------------------" >> reports/critical_alerts.txt
+    
     # Search Heart Rate log for CRITICAL rows and extract correct columns
     grep "CRITICAL" active_logs/heart_rate_log.log | \
     awk '{print $1, $2, "|", $4, "|", $6}' >> reports/critical_alerts.txt
