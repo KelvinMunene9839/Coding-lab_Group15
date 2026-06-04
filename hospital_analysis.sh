@@ -59,9 +59,18 @@ water_audit() {
             printf "No ICU_WATER_RESERVE records found.\n"
         } else {
             avg = sum / count
-            printf "Average water usage: %.2f L\n", avg
+            printf "======================================\n"
+            printf "   KNH WATER USAGE AUDIT SUMMARY\n"
+            printf "======================================\n"
+            printf "  Device     : ICU_WATER_RESERVE\n"
+            printf "  Records    : %d\n", count
+            printf "  Total      : %.2f L\n", sum
+            printf "  Average    : %.2f L\n", avg
+            printf "======================================\n"
         }
     }'
+
+    echo "Water audit complete."
 
 }
 
