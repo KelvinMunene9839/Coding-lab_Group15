@@ -4,6 +4,7 @@
 # System Initialization
 # ===================
 
+
 initialize_system() {
     if [ ! -d "active_logs" ]; then
         mkdir "active_logs"
@@ -20,7 +21,7 @@ initialize_system() {
         echo "Creating reports ..."
     fi
 }
-
+echo "Starting system initialization..."
 initialize_system
 
 # ==================
@@ -38,5 +39,6 @@ secure_data() {
     echo "Security hardening complete."
 }
 
+echo "Applying security settings..."
 secure_data
 echo "System Environment Secured - $(date)"
