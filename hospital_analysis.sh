@@ -18,11 +18,17 @@ process_vitals() {
     grep "CRITICAL" active_logs/heart_rate_log.log | \
     awk '{print $1, $2, "|", $4, "|", $6}' >> reports/critical_alerts.txt
 
+
     # Search Temperature log for CRITICAL rows and extract correct columns
     grep "CRITICAL" active_logs/temperature_log.log | \
     awk '{print $1, $2, "|", $4, "|", $6}' >> reports/critical_alerts.txt
+    
+    # Count how many critical alerts were found
+    COUNT=$(wc -l < reports/critical_alerts.txt)
+    echo "Total critical alerts found: $COUNT"   
 
     echo "Done! Critical alerts saved to reports/critical_alerts.txt"
+
 }
 
 # Call the function
