@@ -36,3 +36,11 @@ process_vitals() {
 
 # Call the function
 process_vitals
+
+water_audit() {
+
+    echo "Running water usage audit for ICU_WATER_RESERVE..."
+
+}
+
+water_audit
