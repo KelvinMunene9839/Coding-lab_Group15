@@ -8,7 +8,7 @@ A bash-scripted hospital monitoring system that simulates patient sensor data, m
 
 | Member | Name | Role | Contribution |
 |--------|------|------|-------------|
-| M1 | Sage Lessly Rusagara | The Architect | `hospital_admin.sh` — system initialization |
+| M1 | Nixon Bruno Kami | The Architect | `hospital_admin.sh` — system initialization |
 | M2 | Liza Joella Ituze | The Security Lead | `hospital_admin.sh` — security hardening |
 | M3 | Lana Lysley Keza | The Orchestrator | `hospital_admin.sh` — service setup |
 | M4 | Liliose Muhimpundu Gashugi | The Archivist | `hospital_archive.sh` — log rotation & archiving |
