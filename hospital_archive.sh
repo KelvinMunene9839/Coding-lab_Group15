@@ -6,7 +6,6 @@
 ACTIVE_DIR="active_logs"
 ARCHIVE_DIR="archived_logs"
 TIMESTAMP=$(date +%Y%m%d_%H%M)
-EOF
 
 # Fresh-moves each active log into archived_logs with a timestamp.
 
@@ -24,7 +23,6 @@ archive_logs() {
         echo "Archived $log -> $dest"
     done
 }
-EOF
 
 # Recreate empty logs so the engine keeps recording, then run.
 
@@ -37,4 +35,3 @@ recreate_logs() {
 
 archive_logs
 recreate_logs
-EOF
