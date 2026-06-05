@@ -1,5 +1,29 @@
+# ── Generated directories ──────────────────────────────────────────────────────
 active_logs/
 archived_logs/
 reports/
+
+# ── Runtime files ──────────────────────────────────────────────────────────────
 /tmp/hospital_system.pid
+
+# ── Python artifacts ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.Python
+
+# ── OS-generated files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor/IDE files ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
 *~
